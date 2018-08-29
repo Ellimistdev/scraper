@@ -33,9 +33,6 @@ const tablets = getData('https://www.webscraper.io/test-sites/e-commerce/allinon
 const phones = getData('https://www.webscraper.io/test-sites/e-commerce/allinone/phones/touch');
 const laptops = getData('https://www.webscraper.io/test-sites/e-commerce/allinone/computers/laptops');
 
-tablets.then(data => writeData('tablets', data))
-  .catch(e => console.error(e));
-phones.then(data => writeData('phones', data))
-  .catch(e => console.error(e));
-laptops.then(data => writeData('laptops', data))
-  .catch(e => console.error(e));
+tablets.then(data => writeData('tablets', data));
+phones.then(data => writeData('phones', data));
+laptops.then(data => writeData('laptops', data));
